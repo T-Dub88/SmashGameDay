@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Smash Game Day</string>
+    <string name="enter_player_name">Enter Player Name</string>
+    <string name="add_player">Add Player</string>
+    <string name="start_game_day">Start Game Day</string>
+    <string name="activity_two_title">Fight!!!</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="kills">Kills</string>
+    <string name="damage_dealt">Damage Dealt</string>
+    <string name="place">Place</string>
+    <string name="sds">SDs</string>
+    <string name="end_game_day">End Game Day</string>
+    <string name="total_score">Total Score: %1$d</string>
+    <string name="round">End Round %1$d</string>
+    <string name="total_stats">Total Stats:</string>
+</resources>
