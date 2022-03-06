@@ -11,12 +11,6 @@
         android:theme="@style/Theme.SmashGameDay">
 
         <activity
-            android:name=".InGameActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:exported="false"
-            android:label="@string/activity_two_title" />
-
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

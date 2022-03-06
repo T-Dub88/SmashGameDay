@@ -4,16 +4,14 @@ package com.example.smashgameday.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.TextView;
+import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.smashgameday.R;
-import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -23,29 +21,16 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button addPlayer;
+  public final ImageView backgroundImage;
 
   @NonNull
-  public final TextView playerList;
+  public final FragmentContainerView navHostFragment;
 
-  @NonNull
-  public final TextInputLayout playerName;
-
-  @NonNull
-  public final TextInputEditText playerNameText;
-
-  @NonNull
-  public final Button startGameDay;
-
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button addPlayer,
-      @NonNull TextView playerList, @NonNull TextInputLayout playerName,
-      @NonNull TextInputEditText playerNameText, @NonNull Button startGameDay) {
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ImageView backgroundImage, @NonNull FragmentContainerView navHostFragment) {
     this.rootView = rootView;
-    this.addPlayer = addPlayer;
-    this.playerList = playerList;
-    this.playerName = playerName;
-    this.playerNameText = playerNameText;
-    this.startGameDay = startGameDay;
+    this.backgroundImage = backgroundImage;
+    this.navHostFragment = navHostFragment;
   }
 
   @Override
@@ -75,38 +60,19 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.add_player;
-      Button addPlayer = ViewBindings.findChildViewById(rootView, id);
-      if (addPlayer == null) {
+      id = R.id.background_image;
+      ImageView backgroundImage = ViewBindings.findChildViewById(rootView, id);
+      if (backgroundImage == null) {
         break missingId;
       }
 
-      id = R.id.player_list;
-      TextView playerList = ViewBindings.findChildViewById(rootView, id);
-      if (playerList == null) {
+      id = R.id.nav_host_fragment;
+      FragmentContainerView navHostFragment = ViewBindings.findChildViewById(rootView, id);
+      if (navHostFragment == null) {
         break missingId;
       }
 
-      id = R.id.player_name;
-      TextInputLayout playerName = ViewBindings.findChildViewById(rootView, id);
-      if (playerName == null) {
-        break missingId;
-      }
-
-      id = R.id.player_name_text;
-      TextInputEditText playerNameText = ViewBindings.findChildViewById(rootView, id);
-      if (playerNameText == null) {
-        break missingId;
-      }
-
-      id = R.id.start_game_day;
-      Button startGameDay = ViewBindings.findChildViewById(rootView, id);
-      if (startGameDay == null) {
-        break missingId;
-      }
-
-      return new ActivityMainBinding((ConstraintLayout) rootView, addPlayer, playerList, playerName,
-          playerNameText, startGameDay);
+      return new ActivityMainBinding((ConstraintLayout) rootView, backgroundImage, navHostFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

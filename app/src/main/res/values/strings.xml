@@ -12,6 +12,12 @@
     <string name="sds">SDs</string>
     <string name="end_game_day">End Game Day</string>
     <string name="total_score">Total Score: %1$d</string>
-    <string name="round">End Round %1$d</string>
+    <string name="round">End Round %s</string>
     <string name="total_stats">Total Stats:</string>
+    <string name="delete_player">Delete Player</string>
+    <string name="player_added">%s added!</string>
+    <string name="player_removed">%s removed!</string>
+    <string name="player_not_found">"%s not found!"</string>
+    <string name="enter_name">Enter Player Name!</string>
+    <string name="wins"># of wins: %s</string>
 </resources>

@@ -1,150 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<com.google.android.material.card.MaterialCardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="wrap_content"
-    android:layout_width="match_parent"
-    android:layout_margin="8dp" >
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                              
+                                                  
+                                                       
+                                               
+
+    
+                 
+                            
+                                                                  
+                 
+                                    
+                                                                        
+                 
+                              
+                                                                  
+           
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#0000" android:tag="layout/list_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" tools:context=".ui.game.StatEntryFragment">
 
-        <TextView
-            android:id="@+id/total_stats"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toEndOf="@id/score"
-            app:layout_constraintTop_toTopOf="@id/score"
-            android:layout_marginStart="8dp"
-            android:text="@string/total_stats"
-            android:textAppearance="?attr/textAppearanceHeadline6" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
 
-        <TextView
-            android:id="@+id/player_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:textAppearance="?attr/textAppearanceHeadline6" />
-
-        <TextView
-            android:id="@+id/score"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="@id/player_name"
-            app:layout_constraintTop_toBottomOf="@id/player_name"
-            android:layout_marginTop="8dp"
-            android:textAppearance="?attr/textAppearanceHeadline6" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/kill"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="@id/player_name"
-            app:layout_constraintTop_toBottomOf="@id/score"
-            android:layout_marginTop="8dp"
-            android:hint="@string/kills" >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/kills_text"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/total_stats"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="number" />
+                app:layout_constraintStart_toEndOf="@id/score"
+                app:layout_constraintTop_toTopOf="@id/score"
+                android:layout_marginStart="8dp"
+                android:text="@string/total_stats"
+                android:textAppearance="?attr/textAppearanceHeadline6" />
 
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <TextView
-            android:id="@+id/kill_stat"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="@id/kill"
-            app:layout_constraintStart_toEndOf="@id/kill"
-            app:layout_constraintEnd_toEndOf="@id/total_stats"
-            app:layout_constraintBottom_toBottomOf="@id/kill"
-            android:textAppearance="?attr/textAppearanceHeadline6"
-            android:gravity="center" />
-
-        <TextView
-            android:id="@+id/damage_dealt_stat"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="@id/damage_dealt"
-            app:layout_constraintStart_toEndOf="@id/damage_dealt"
-            app:layout_constraintEnd_toEndOf="@id/total_stats"
-            app:layout_constraintBottom_toBottomOf="@id/damage_dealt"
-            android:textAppearance="?attr/textAppearanceHeadline6"
-            android:gravity="center" />
-
-        <TextView
-            android:id="@+id/sds_stat"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="@id/sds"
-            app:layout_constraintStart_toEndOf="@id/sds"
-            app:layout_constraintEnd_toEndOf="@id/total_stats"
-            app:layout_constraintBottom_toBottomOf="@id/sds"
-            android:textAppearance="?attr/textAppearanceHeadline6"
-            android:gravity="center" />
-
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/damage_dealt"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="@id/player_name"
-            app:layout_constraintTop_toBottomOf="@id/kill"
-            android:layout_marginTop="8dp"
-            android:hint="@string/damage_dealt" >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/damage_dealt_text"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/player_name"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="number" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textAppearance="?attr/textAppearanceHeadline6" />
 
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/place"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="@id/player_name"
-            app:layout_constraintTop_toBottomOf="@id/sds"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="16dp"
-            android:hint="@string/place" >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/place_text"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:inputType="number" />
+                app:layout_constraintStart_toStartOf="@id/player_name"
+                app:layout_constraintTop_toBottomOf="@id/player_name"
+                android:layout_marginTop="8dp"
+                android:textAppearance="?attr/textAppearanceHeadline6" />
 
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/sds"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="@id/player_name"
-            app:layout_constraintTop_toBottomOf="@id/damage_dealt"
-            android:layout_marginTop="8dp"
-            android:hint="@string/sds" >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/sds_text"
-                android:layout_width="match_parent"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/kill"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:inputType="number" />
+                app:layout_constraintStart_toStartOf="@id/player_name"
+                app:layout_constraintTop_toBottomOf="@id/score"
+                android:layout_marginTop="8dp"
+                android:hint="@string/kills" >
 
-        </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/kills_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-</com.google.android.material.card.MaterialCardView>
+            <TextView
+                android:id="@+id/kill_stat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/kill"
+                app:layout_constraintStart_toEndOf="@id/kill"
+                app:layout_constraintEnd_toEndOf="@id/total_stats"
+                app:layout_constraintBottom_toBottomOf="@id/kill"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/damage_dealt_stat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/damage_dealt"
+                app:layout_constraintStart_toEndOf="@id/damage_dealt"
+                app:layout_constraintEnd_toEndOf="@id/total_stats"
+                app:layout_constraintBottom_toBottomOf="@id/damage_dealt"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/sds_stat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/sds"
+                app:layout_constraintStart_toEndOf="@id/sds"
+                app:layout_constraintEnd_toEndOf="@id/total_stats"
+                app:layout_constraintBottom_toBottomOf="@id/sds"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/wins_stat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/place"
+                app:layout_constraintStart_toEndOf="@id/place"
+                app:layout_constraintEnd_toEndOf="@id/total_stats"
+                app:layout_constraintBottom_toBottomOf="@id/place"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:gravity="center"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/damage_dealt"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/player_name"
+                app:layout_constraintTop_toBottomOf="@id/kill"
+                android:layout_marginTop="8dp"
+                android:hint="@string/damage_dealt" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/damage_dealt_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/place"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/player_name"
+                app:layout_constraintTop_toBottomOf="@id/sds"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/place" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/place_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/sds"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/player_name"
+                app:layout_constraintTop_toBottomOf="@id/damage_dealt"
+                android:layout_marginTop="8dp"
+                android:hint="@string/sds" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sds_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+         

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/playerEntryFragment">
+
+    <fragment
+        android:id="@+id/playerEntryFragment"
+        android:name="com.example.smashgameday.ui.game.PlayerEntryFragment"
+        android:label="fragment_player_entry"
+        tools:layout="@layout/fragment_player_entry" >
+        <action
+            android:id="@+id/action_playerEntryFragment_to_statEntryFragment"
+            app:destination="@id/statEntryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statEntryFragment"
+        android:name="com.example.smashgameday.ui.game.StatEntryFragment"
+        android:label="fragment_stat_entry"
+        tools:layout="@layout/fragment_stat_entry" />
+</navigation>

@@ -19,17 +19,23 @@
     <string name="add_player">Add Player</string>
     <string name="app_name">Smash Game Day</string>
     <string name="damage_dealt">Damage Dealt</string>
+    <string name="delete_player">Delete Player</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="end_game_day">End Game Day</string>
+    <string name="enter_name">Enter Player Name!</string>
     <string name="enter_player_name">Enter Player Name</string>
     <string name="kills">Kills</string>
     <string name="place">Place</string>
-    <string name="round">End Round %1$d</string>
+    <string name="player_added">%s added!</string>
+    <string name="player_not_found">"%s not found!"</string>
+    <string name="player_removed">%s removed!</string>
+    <string name="round">End Round %s</string>
     <string name="sds">SDs</string>
     <string name="start_game_day">Start Game Day</string>
     <string name="total_score">Total Score: %1$d</string>
     <string name="total_stats">Total Stats:</string>
+    <string name="wins"># of wins: %s</string>
     <style name="Theme.SmashGameDay" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/blue_700</item>
